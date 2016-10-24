@@ -1,6 +1,5 @@
 package AllLevels
 
-import _root_.Euler._
 
 import scala.annotation.tailrec
 import scala.collection.mutable.ArrayBuffer
@@ -10,7 +9,7 @@ import scala.util.control.Breaks._
 /**
   * Created by aindana on 10/21/2016.
   */
-object Level1{
+object Level1 extends BaseTest{
 
 
   def amicablePair(): Unit =
@@ -469,17 +468,6 @@ object Level1{
     println(sum(listPrimes))
   }
 
-
-  def sum(xs: List[Int]): Long = {
-    @tailrec
-    def inner(xs: List[Int], accum: Long): Long = {
-      xs match {
-        case x :: tail => inner(tail, accum + x)
-        case Nil => accum
-      }
-    }
-    inner(xs, 0)
-  }
 
 
   def Collatz(value: Long): Unit =
