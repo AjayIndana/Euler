@@ -6,7 +6,7 @@ import AllLevels.Level1._
 import AllLevels.Level2._
 object Euler extends BaseTest{
   def main(args: Array[String]): Unit = {
-      
+
   }
 
 
